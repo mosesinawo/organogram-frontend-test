@@ -5,6 +5,7 @@ interface AppLayoutProps {
   children: ReactNode;
 }
 
+
 function AppLayout({ children }: AppLayoutProps) {
   return (
     <>
