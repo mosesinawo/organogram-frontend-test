@@ -1,7 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Header from "./Header";
 
-function AppLayout({ children }) {
+interface AppLayoutProps {
+  children: ReactNode;
+}
+
+function AppLayout({ children }: AppLayoutProps) {
   return (
     <>
       <Header />
