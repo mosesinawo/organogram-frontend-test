@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-color: #f3f4f8;
+  --dark-gray-color: #e6e9f0;
+  --blue-color: #2b3875;
+  --green-color: #95d7a5;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--gray-color);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  
+}
+
+button {
+  cursor: pointer;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+select:disabled,
+input:disabled {
+  background-color:#374151;
+  color: #9ca3af;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--blue-color);
+  outline-offset: -1px;
+ 
+}
